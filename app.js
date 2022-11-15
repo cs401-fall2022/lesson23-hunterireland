@@ -5,7 +5,7 @@ var engine = new Liquid();
 
 var indexRouter = require('./routes/index');
 var createRouter = require('./routes/create');
-// var updateRouter = require('./routes/edit');
+var updateRouter = require('./routes/edit');
 var destroyRouter = require('./routes/destroy');
 
 var app = express();
@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/create', createRouter);
-// app.use('/edit', updateRouter);
+app.use('/edit', updateRouter);
 app.use('/destroy', destroyRouter);
 
 // register liquid engine
