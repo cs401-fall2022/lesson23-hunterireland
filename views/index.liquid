@@ -6,22 +6,27 @@
     <title>{{title}}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Any Luck?</h1>
-    <ul>
-      {% for txt in data%}
-        <ul>{{txt.blog_id}} - {{txt.blog_txt}}
+    <h1>
+      <a href="/">Break Stuff!</a>
+    </h1>
+    <h2>Welcome to the Feed</h2>
+    <div class="flexbox">
+      <nav>
+        <ul>
+          <li><a href="/create">Post</a></li>
+          <li><a href="/edit">Edit</a></li>
+          <li><a href="/destroy">Destroy</a></li>
         </ul>
-      {% endfor%}
-    </ul>
-    <nav>
-      <ul>
-        <li><a href="/create">Post</a></li>
-        <li><a href="/edit">Edit</a></li>
-        <li><a href="/destroy">Destroy</a></li>
+      </nav>
+      <ul id="posts">
+        {% for txt in data%}
+          <ul>{{txt.blog_id}} - {{txt.blog_txt}}
+          </ul>
+        {% endfor%}
       </ul>
-    </nav>
+    </div>
   </body>
 </html>

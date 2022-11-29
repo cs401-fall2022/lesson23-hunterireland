@@ -1,4 +1,56 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+h1, h2 {
+  color: white;
+  font-style: italic;
+  font-variant: small-caps;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 10px;
+  text-shadow: 0 0 8px red, 0 0 10px purple;
+}
+h2 {
+  margin-top: 0;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  box-shadow: 0 0 8px red, 0 0 10px purple;
+  margin-left: 10px;
+  font-size: x-large;
+}
+nav ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+nav a {
+  color: white;
+  font-style: italic;
+  font-variant: small-caps;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  padding: 5px;
+}
+nav a:hover {
+  color: red;
+}
+#posts, form {
+  margin-right: auto;
+  margin-left: 20px;
 }
