@@ -1,4 +1,6 @@
-# Any luck? A fishing blog
+# Break Stuff! 
+
+A blog for nu metal junkies, classic rock lovers, old school metalheads, and jock jam diehards.
 
 
 ## How to run

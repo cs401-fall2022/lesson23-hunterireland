@@ -18,7 +18,7 @@ router.get('/', function (req, res, next) {
             console.log("Table exists!");
             db.all(`SELECT blog_id, blog_txt FROM blog`, (err, rows) => {
               console.log("Returning " + rows.length + " records");
-              res.render('index', { title: 'Express', data: rows });
+              res.render('index', { title: 'Break Stuff', data: rows });
             });
           } else {
             console.log("Creating table and inserting some sample data");
@@ -31,7 +31,7 @@ router.get('/', function (req, res, next) {
                              ('Caught a biggun at Swan Falls!');`,
               () => {
                 db.all(`SELECT blog_id, blog_txt FROM blog`, (err, rows) => {
-                  res.render('index', { title: 'Express', data: rows });
+                  res.render('index', { title: 'Break Stuff', data: rows });
                 });
               });
           }
