@@ -27,12 +27,14 @@ h2 {
 }
 .flexbox {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
 }
 nav {
+  flex-basis: 10%;
   box-shadow: 0 0 8px red, 0 0 10px purple;
   margin-left: 10px;
   font-size: x-large;
+  height: 150px;
 }
 nav ul {
   list-style-type: none;
@@ -51,6 +53,73 @@ nav a:hover {
   color: red;
 }
 #posts, form {
-  margin-right: auto;
-  margin-left: 20px;
+  flex-basis: 90%
+}
+#posts {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.post {
+  background-color: darkred;
+  display: block;
+  box-shadow: 0 0 8px red, 0 0 10px purple;
+  margin: 20px;
+  padding: 10px;
+}
+.postLabel {
+  font-size: larger;
+  display: inline-block;
+  padding: 2px;
+  padding-bottom: 4px;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 0 0 8px red, 0 0 10px purple;
+}
+.text {
+  padding: 8px;
+}
+form {
+  padding-left: 25px;
+}
+form label {
+  display: inline-block;
+  font-size: x-large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 0 0 8px red, 0 0 10px purple;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  display: block;
+}
+.areaLabel {
+  padding-top: 15px;
+}
+.create {
+  margin-top: 0;
+  padding-top: 0;
+}
+.photo {
+  padding: 20px;
+}
+#deleteBtn {
+  padding-top: 20px;
+}
+#deleteBtn button {
+  transition: all .2s ease-in-out; 
+  font-style: italic;
+  font-variant:small-caps;
+  font-size: xx-large;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: black;
+  color: red;
+  width: 50%;
+  height: 50px;
+  border: 2px solid orange;
+  box-shadow: 0 0 8px red, 0 0 12px orange;
+}
+#deleteBtn button:hover {
+  transform: scale(1.5);
+  background-color: orange;
+  color: black;
 }

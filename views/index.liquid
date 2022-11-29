@@ -24,8 +24,12 @@
       </nav>
       <ul id="posts">
         {% for txt in data%}
-          <ul>{{txt.blog_id}} - {{txt.blog_txt}}
-          </ul>
+          <div class="post">
+            <span class="postLabel">Blog ID: {{txt.blog_id}}</span>
+            <div class="text">
+              {{txt.blog_txt}}
+            </div>
+          </div>
         {% endfor%}
       </ul>
     </div>
