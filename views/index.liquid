@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
           <li><a href="/destroy">Destroy</a></li>
         </ul>
       </nav>
-      <ul id="posts">
+      <div id="posts">
         {% for txt in data%}
           <div class="post">
             <span class="postLabel">Blog ID: {{txt.blog_id}}</span>
@@ -31,7 +31,7 @@
             </div>
           </div>
         {% endfor%}
-      </ul>
+      </div>
     </div>
   </body>
 </html>
